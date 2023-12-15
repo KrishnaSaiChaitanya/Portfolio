@@ -73,11 +73,12 @@ ul {
   margin-left: auto;
 }
 .theme-btn {
+  font-size: 14px;
   background: var(--primary_color);
   color: #000000;
   display: block;
   text-align: center;
-  padding: 11px 58px 10px 58px;
+  padding: 8px 38px 10px 38px;
   display: inline-flex;
   align-items: center;
   border-radius: 30px;
@@ -88,8 +89,28 @@ ul {
   cursor: pointer;
   border: 2px solid var(--primary_color);
 }
+.theme-btn-1 {
+  background: none;
+  color: var(--primary_color);
+  display: block;
+  /* text-align: center; */
+  padding: 8px 24px 10px 28px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 30px;
+  /* justify-content: space-around; */
+  /* text-transform: uppercase; */
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid var(--primary_color);
+  font-size: 14px;
+}
+.theme-btn-1:hover {
+  color: var(--primary_color);
+}
 .theme-btn i {
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 10px;
   display: block;
   margin-bottom: 3px;
@@ -304,7 +325,8 @@ main.drake-main {
   opacity: 0.5;
 }
 .responsive-sidebar-menu .sidebar-menu-inner {
-  max-width: 345px;
+  max-width: 300px;
+  /* font-size: 16px; */
   width: 100%;
   margin-left: auto;
   background: #191919;
@@ -322,7 +344,7 @@ main.drake-main {
   margin: auto;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap p {
-  font-size: 18px;
+  font-size: 20px;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu {
   position: relative;
@@ -349,6 +371,7 @@ main.drake-main {
 .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu li a span {
   position: relative;
   right: 0;
+  font-size: 16px;
   opacity: 1;
   visibility: visible;
   color: #999999;
@@ -1002,16 +1025,16 @@ body .body-overlay {
 
 /* 13 - Skills */
 .skills-area {
-  padding-top: 90px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 .skills .skill {
   margin-bottom: 50px;
 }
 .skills .skill .skill-inner {
   border: 2px solid #565656;
-  border-radius: 85px;
-  padding: 54px 0 48px 0;
+  border-radius: 75px;
+  padding: 29px 0 25px 0;
   margin-bottom: 20px;
   transition: 0.3s;
 }
@@ -1020,10 +1043,10 @@ body .body-overlay {
 }
 .skills .skill .skill-inner img {
   display: block;
-  margin: auto auto 29px auto;
+  margin: auto auto 21px auto;
 }
 .skills .skill .skill-inner h1 {
-  font-size: 30px;
+  font-size: 25px;
   color: var(--primary_color);
   font-weight: 300;
   margin: 0;
