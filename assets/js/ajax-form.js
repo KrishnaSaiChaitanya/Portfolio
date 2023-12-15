@@ -4,30 +4,30 @@
     message = $(".messenger-box-contact__msg"),
     form_data;
 
-  // const submit = document.getElementById("submit-form");
-  // submit.addEventListener("click", validate);
-  // function validate(e) {
-  //     const message = document.getElementById('required-msg');
+  const submit = document.getElementById("submit-form");
+  submit.addEventListener("click", validate);
+  function validate(e) {
+    const message = document.getElementById("required-msg");
 
-  //     const fullName = document.getElementById("full-name");
-  //     const email = document.getElementById("email");
-  //     const subject = document.getElementById("subject");
-  //     let valid = true;
+    const fullName = document.getElementById("full-name");
+    const email = document.getElementById("email");
+    const subject = document.getElementById("subject");
+    let valid = true;
 
-  //     if (!fullName.value || !email.value || !subject.value) {
-  //         message.classList.add('show');
-  //         fullName.classList.add("invalid");
-  //     } else {
-  //         message.classList.remove('show');
-  //     }
+    if (!fullName.value || !email.value || !subject.value) {
+      message.classList.add("show");
+      fullName.classList.add("invalid");
+    } else {
+      message.classList.remove("show");
+    }
 
-  //     return valid;
-  // }
+    return valid;
+  }
 
   // Success function
   function done_func(response) {
-    message.fadeIn().removeClass("alert-danger").addClass("alert-success");
-    message.text(response);
+    message.fadeIn().removeClass("alert-success").addClass("alert-warning");
+    message.text("Something went Wrong");
     setTimeout(function () {
       message.fadeOut();
     }, 3000);
@@ -36,8 +36,8 @@
 
   // fail function
   function fail_func(data) {
-    message.fadeIn().removeClass("alert-success").addClass("alert-success");
-    message.text(data.responseText);
+    message.fadeIn().removeClass("alert-success").addClass("alert-warning");
+    message.text("Something went Wrong");
     setTimeout(function () {
       message.fadeOut();
     }, 3000);
@@ -63,7 +63,7 @@
     form_data = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: form.attr("action"),
+      url: "process_form.php",
       data: form_data,
     })
       .done(done_func)
