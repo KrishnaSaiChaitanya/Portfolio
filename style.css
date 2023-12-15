@@ -722,7 +722,8 @@ main.drake-main {
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  padding: 50px;
+  padding: 40px;
+  margin: 8px;
   z-index: 10;
 }
 .drake-main .left-sidebar {
@@ -731,7 +732,7 @@ main.drake-main {
 .left-sidebar > img.me {
   border-radius: 30px;
   display: block;
-  margin-bottom: 56px;
+  margin-bottom: 52px;
 }
 .left-sidebar .sidebar-header {
   margin-bottom: 65px;
